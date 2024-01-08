@@ -1,0 +1,75 @@
+@import '../../bank';
+
+.order {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    border: 1px $grayCC solid;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 30px;
+    align-items: center;
+    max-width: 530px;
+    p {
+        color: $gray04;
+    }
+    span {
+        font-size: 17px;
+        color: $accent;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px auto;
+    }
+    input {
+        padding: 5px 20px;
+        border-radius: 8px;
+        border: 1px $grayCC solid;
+        margin: 0 10px;
+        font-size: 0.9rem;
+        &:focus-visible {
+            outline: none;
+            border: 1px $gray99 solid;
+          }
+    }
+    button {
+        padding: 5px 40px;
+        margin-top: 20px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: white;
+        transition: all 0.1s;
+        background-color: $accent;
+        &:hover {
+            color: white;
+            background-color: #69a4ff;
+        }
+    }
+}
+
+.locked {
+    background-color: $gray06 !important;
+    &:hover {
+        background-color: $gray06 !important;
+    }
+}
+
+.police {
+    margin-top: 10px;
+    font-size: 11px;
+    span {
+        font-size: 11px;
+        color: $accent;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.order_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

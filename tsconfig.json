@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "types": ["@yandex/ymaps3-types"]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/select/Select.jsx", "app/components/price/Price.jsx", "app/page.jsx", "app/components/baner/baner.jsx", "app/components/footer/FooterBox.jsx", "app/components/header/Header.jsx", "app/components/order/Order.jsx", "app/components/api/map.tsx", "app/components/api/Map.jsx", "app/components/contacts/Contacts.jsx"],
+  "exclude": ["node_modules"]
+}

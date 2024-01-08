@@ -1,0 +1,224 @@
+@import "../../bank";
+
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: $maxWidth;
+  margin-top: 40px;
+  border-bottom: 1px $grayCC solid;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 20px 0px 15px 10px;
+  }
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.tabsBody {
+  flex: 7;
+  padding-right: 60px;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.tabs li {
+  margin-right: 5px;
+  padding: 6px 20px;
+  font-size: 0.9rem;
+  // background-color: $grayf3;
+  border: 1px #dedede solid;
+  border-radius: 25px;
+  color: $gray04;
+  cursor: pointer;
+}
+
+.tabs li:hover {
+  background-color: #dedede;
+  transition: 0.2s;
+}
+
+.active {
+  color: black !important;
+  background-color: #dedede;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.leftColl {
+  margin-right: 25px;
+}
+
+.rightColl {
+  margin-left: 25px;
+}
+
+.leftColl,
+.rightColl {
+  width: 100%;
+}
+
+.leftColl li,
+.rightColl li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+  background-image: linear-gradient(
+    to right,
+    black 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: 0 calc(100% - 5px);
+  background-size: 4px 1px;
+  background-repeat: repeat-x;
+  span {
+    background-color: #fff;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+.cell:hover {
+  cursor: pointer;
+  .cellName, .cellPrice {
+    color: $accent;
+  }
+}
+
+.cellSelected {
+  color: $accent;
+}
+
+.cellName {
+  padding-right: 15px;
+}
+
+.cellPrice {
+  padding-left: 10px;
+}
+
+.ps {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: $gray99;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.description {
+  margin-left: 20px;
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  li {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.3rem;
+  }
+}
+
+.moreDetails {
+  display: flex;
+  flex-direction: row;
+  border: 1px $grayCC solid;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding: 25px 10px;
+}
+
+.into {
+  width: 115px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin-top: 10px;
+    width: 160px;
+  }
+  p {
+    color: $gray04;
+    font-weight: bold;
+  }
+  span {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.bodyInto {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $gray04;
+    margin-bottom: 10px;
+  }
+  .body {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 0.9rem;
+    }
+  }
+  .damageWorks{
+    color: $accent;
+    margin: 15px 0px;
+  }
+  .worksTime {
+    color: $gray06 ;
+    padding-top: 20px;
+  }
+  .worksGuard {
+    color: $gray06 ;
+  }
+}
+ 
+.payed {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  text-wrap: nowrap;
+  padding: 0 10px;
+}

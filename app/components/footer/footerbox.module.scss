@@ -1,0 +1,24 @@
+@import '../../bank';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: $grayee;
+}
+
+.copyright {
+    color: #2c2f34;
+    font-size: 12px;
+    border-top: 1px $grayCC solid;
+    p {
+        padding-top: 10px;
+    }
+    a {
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

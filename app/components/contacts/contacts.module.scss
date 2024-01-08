@@ -1,0 +1,52 @@
+@import '../../bank';
+
+.contacts {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .telegram {
+    margin: 0px 20px;
+    :first-child{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    fill: $gray06;
+    }
+  }
+  
+  .telegram :hover{
+    :first-child{
+      fill: $accent;
+      transition: .1s;
+    }
+  }
+  
+  .phone {
+    display: flex;
+    flex-direction: column;
+    a{
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: black;
+      padding: auto;
+    }
+    a:hover {
+      color: $accent;
+      transition: .1s;
+    }
+    span {
+      font-size: 0.7rem;
+      color: $gray06;
+    }
+  }
+
+  .align_right {
+    text-align: right;
+  }
